@@ -1,0 +1,21 @@
+.row {
+    margin-left: rem(-8);
+    margin-right: rem(-8);
+
+    [class^="col-"],
+    [class*=" col-"],
+    .col {
+        padding-left: rem(8);
+        padding-right: rem(8);
+    }
+}
+
+.is-act-cartpage .checkout .checkout-container,
+.is-act-checkoutregisterpage .checkout .checkout-container,
+.is-act-confirmpage .checkout .checkout-container,
+.is-ctl-accountorder .checkout .checkout-container,
+.is-act-finishpage .checkout .checkout-container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}

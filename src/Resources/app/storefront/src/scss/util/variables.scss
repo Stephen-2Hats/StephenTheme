@@ -1,0 +1,78 @@
+/*------------------*
+# Variables
+*------------------*/
+
+// Breakpoints
+$desktop-lg: rem($nfx-desktop-lg); // 1919 - Wide Desktop Screens (Like Above 1680 - Large Screens)
+$desktop-md: rem($nfx-desktop-md); // 1679 - Medium Desktop Screens (Like 1480 - Macbook & Macbook Pro)
+$desktop-sm: rem($nfx-desktop-sm); // 1420 - Small Desktop Screens
+$desktop-xs: rem($nfx-desktop-xs); // 1360 - Small Desktop Screens
+
+$tablet-lg: rem($nfx-tablet-lg); // 1250 Landscape Tablet
+$tablet-md: rem($nfx-tablet-md); // 991 Portrait Medium Tablet
+$tablet-sm: rem($nfx-tablet-sm); // 865 Portrait Tablet
+
+$mobile-lg: rem($nfx-mobile-lg); // 767 Mobile Landscape
+$mobile-md: rem($nfx-mobile-md); // 576 Mobile Medium Portrait
+$mobile-sm: rem($nfx-mobile-sm); // 540 Mobile Portrait
+
+// Typography
+$fonttype-text: $sw-font-family-base; // 'OpenSans', sans-serif
+$fonttype-text-italic: $sw-font-family-italic; // 'OpenSans-Italic', sans-serif
+$fonttype-headline: $sw-font-family-headline; // 'OpenSans', sans-serif
+
+/*
+* Paths
+*/
+$mcdart-assets-path: '/bundles/stephen-theme/assets';
+$mcdart-font-path: '/bundles/stephen-theme/assets/fonts';
+
+/*
+ * Base colors
+*/
+
+// Theme colours
+$primary-color: $sw-color-brand-primary; // #db151c;
+$secondary-color: $sw-color-brand-secondary; // #061633
+$border-color: $sw-border-color; // #dadae5
+$btn-border-color: $sw-btn-border-color; // #C3C6DB
+$primary-background-color: $sw-btn-primary-background-color; // #ffffff
+
+// Typography
+$text-color: $sw-text-color; // #000000
+$headine-color: $sw-headline-color; // #4a545b
+
+// Status messages
+$success-color: $sw-color-success; // #02c280
+$error-color: $sw-color-danger; // #FF8C99
+$information-color: $sw-color-info; // #76bce7
+$notice-color: $sw-color-warning; // #f09f00
+
+// E-Commerce
+$price-color: $sw-color-price; // #3f4c58
+$buy-button-color: $sw-color-buy-button; // #db151c
+$buy-button-text-color: $sw-color-buy-button-text; // #ffffff;
+
+//Other Colors
+$white-color: $sw-white-color; // #ffffff
+$black-color: $sw-black-color; // #000000
+$grey-color: $sw-grey-color; // #878DB8
+$light-grey-color: $sw-light-grey-color; // #F8F8FB
+$footer-border-color: $sw-footer-border-color; // #CFD2E3
+$light-white-color: $sw-light-white-color; // #F6F6F6
+$footer-background-color: $sw-footer-background-color; // #F8F8FB
+$product-border-color: $sw-product-border-color; // #DBDDEA
+$product-image-background-color: $sw-product-image-background-color; // #F3F4F8
+$slider-arrow-color: $sw-slider-arrow-color; // #C6CAD2
+$review-star: $sw-review-star; // #F8C842
+
+$primary-hover-color:$sw-primary-hover-color; // #E83B27
+
+//Darkmode
+$dark100-color: $sw-dark100-color; // #1B2230
+$dark200-color: $sw-dark200-color; // #333945
+$grey100-color: $sw-grey100-color; // #ABAEB3
+$grey200-color: $sw-grey200-color; // #6F737C
+
+// Footer colors
+$color1: #efeee5;

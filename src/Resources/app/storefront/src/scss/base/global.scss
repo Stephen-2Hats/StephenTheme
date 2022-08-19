@@ -1,0 +1,153 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $fonttype-text;
+    font-size: rem(16);
+    min-height: 100%;
+}
+
+.cookie-permission-container {
+    font-size: rem(14);
+}
+
+.mcdart-container-main {
+    overflow-x: hidden;
+}
+
+.container,
+.cms-block-nfx-custom-buttons .cms-block-container,
+.cms-block-nfx-products-list .cms-block-container,
+.cms-block-nfx-product-slider .cms-block-container,
+.nfx-top-highlights-list-wrapper .top-highlights-inner,
+.cms-section .boxed {
+    max-width: rem(1540);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem(20);
+    padding-right: rem(20);
+
+    @include desktop-md() {
+        max-width: rem(1280);
+    }
+
+    @include desktop-sm() {
+        max-width: rem(1100);
+    }
+
+    @include tablet-lg() {
+        max-width: rem(860);
+    }
+
+    @include tablet-md() {
+        max-width: rem(716);
+    }
+
+    @include tablet-sm() {
+        max-width: rem(620);
+    }
+
+    @include mobile-lg() {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    &.limited {
+        max-width: rem(1280);
+
+        @include desktop-md() {
+            max-width: rem(1150);
+        }
+
+        @include tablet-lg {
+            max-width: rem(860);
+        }
+    }
+
+    &.wide {
+        width: 92%;
+        max-width: rem(1750);
+
+        @include tablet-lg() {
+            width: 100%;
+            padding: 0 rem(20);
+        }
+    }
+}
+
+
+.nfx-sprites {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url('#{$mcdart-assets-path}/images/nfx-sprite.svg');
+    display: block;
+}
+
+.icon {
+    &>svg {
+        top: rem(1.5);
+    }
+
+    &.icon-xs {
+        height: rem(10);
+        width: rem(10);
+    }
+}
+
+b,
+strong,
+dt {
+    font-weight: 600;
+}
+
+i,
+em {
+    font-style: normal;
+    font-family: $fonttype-text-italic;
+}
+
+a,
+.btn {
+    transition: 0.3s all;
+}
+
+.header-main,
+.content-main,
+.footer-main {
+    transition: 0.3s all;
+    width: 100%;
+}
+
+.no-scroll {
+    @include above($mobile-sm) {
+        @include blur(5);
+    }
+}
+
+pre {
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}

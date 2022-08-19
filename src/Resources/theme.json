@@ -1,0 +1,618 @@
+{
+  "name": "StephenTheme",
+  "author": "Stephen",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@StephenTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/stephen-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+      "blocks": {
+          "mcdartBreakpointsBlock": {
+              "label": {
+                  "en-GB": "Breakpoints",
+                  "de-DE": "Haltepunkte"
+              }
+          },
+          "mcdartthemeColorsBlock": {
+              "label": {
+                  "en-GB": "Theme Colors",
+                  "de-DE": "Themenfarben"
+              }
+          }
+      },
+      "fields": {
+          "sw-color-brand-primary": {
+              "label": {
+                  "en-GB": "Brand Primary",
+                  "de-DE": "Marke primär"
+              },
+              "type": "color",
+              "value": "#db151c",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 100
+          },
+          "sw-color-brand-secondary": {
+              "label": {
+                  "en-GB": "Brand Secondary",
+                  "de-DE": "Marke zweitrangig"
+              },
+              "type": "color",
+              "value": "#061633",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 200
+          },
+          "sw-border-color": {
+              "label": {
+                  "en-GB": "Border Color",
+                  "de-DE": "Randfarbe"
+              },
+              "type": "color",
+              "value": "#dadae5",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 300
+          },
+          "sw-btn-border-color": {
+              "label": {
+                  "en-GB": "Button Border Color",
+                  "de-DE": "Rahmenfarbe der Schaltfläche"
+              },
+              "type": "color",
+              "value": "#C3C6DB",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 400
+          },
+          "sw-btn-primary-background-color": {
+              "label": {
+                  "en-GB": "Primary Background Color",
+                  "de-DE": "Primäre Hintergrundfarbe"
+              },
+              "type": "color",
+              "value": "#FFFFFF",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 500
+          },
+          "sw-text-color": {
+              "label": {
+                  "en-GB": "Text colour",
+                  "de-DE": "Textfarbe"
+              },
+              "type": "color",
+              "value": "#000000",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 600
+          },
+          "sw-headline-color": {
+              "label": {
+                  "en-GB": "Headine color",
+                  "de-DE": "Farbe der Überschrift"
+              },
+              "type": "color",
+              "value": "#4a545b",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 700
+          },
+          "sw-color-price": {
+              "label": {
+                  "en-GB": "Price color",
+                  "de-DE": "Preis Farbe"
+              },
+              "type": "color",
+              "value": "#3f4c58",
+              "editable": true,
+              "block": "eCommerce",
+              "order": 800
+          },
+          "sw-color-buy-button": {
+              "label": {
+                  "en-GB": "Buy button color",
+                  "de-DE": "Knopffarbe kaufen"
+              },
+              "type": "color",
+              "value": "#db151c",
+              "editable": true,
+              "block": "eCommerce",
+              "order": 900
+          },
+          "sw-color-buy-button-text": {
+              "label": {
+                  "en-GB": "Buy button text color",
+                  "de-DE": "Schaltflächentextfarbe kaufen"
+              },
+              "type": "color",
+              "value": "#ffffff",
+              "editable": true,
+              "block": "eCommerce",
+              "order": 1000
+          },
+          "sw-white-color": {
+              "label": {
+                  "en-GB": "White color",
+                  "de-DE": "weiße Farbe"
+              },
+              "type": "color",
+              "value": "#FFFFFF",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1100
+          },
+          "sw-black-color": {
+              "label": {
+                  "en-GB": "Black color",
+                  "de-DE": "Schwarze Farbe"
+              },
+              "type": "color",
+              "value": "#000000",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1200
+          },
+          "sw-grey-color": {
+              "label": {
+                  "en-GB": "Grey color",
+                  "de-DE": "Graue Farbe"
+              },
+              "type": "color",
+              "value": "#878DB8",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1300
+          },
+          "sw-light-grey-color": {
+              "label": {
+                  "en-GB": "Light grey color",
+                  "de-DE": "Hellgraue Farbe"
+              },
+              "type": "color",
+              "value": "#F8F8FB",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1400
+          },
+          "sw-footer-border-color": {
+              "label": {
+                  "en-GB": "Footer border color",
+                  "de-DE": "Rahmenfarbe der Fußzeile"
+              },
+              "type": "color",
+              "value": "#CFD2E3",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1500
+          },
+          "sw-light-white-color": {
+              "label": {
+                  "en-GB": "Light white color",
+                  "de-DE": "Hellweiße Farbe"
+              },
+              "type": "color",
+              "value": "#F6F6F6",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1600
+          },
+          "sw-footer-background-color": {
+              "label": {
+                  "en-GB": "Footer background color",
+                  "de-DE": "Hintergrundfarbe der Fußzeile"
+              },
+              "type": "color",
+              "value": "#F8F8FB",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1700
+          },
+          "sw-product-border-color": {
+              "label": {
+                  "en-GB": "Product border color",
+                  "de-DE": "Produktrandfarbe"
+              },
+              "type": "color",
+              "value": "#DBDDEA",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1800
+          },
+          "sw-product-image-background-color": {
+              "label": {
+                  "en-GB": "Product image background color",
+                  "de-DE": "Hintergrundfarbe des Produktbildes"
+              },
+              "type": "color",
+              "value": "#DBDDEA",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 1900
+          },
+          "sw-slider-arrow-color": {
+              "label": {
+                  "en-GB": "Slider arrow color",
+                  "de-DE": "Pfeilfarbe des Schiebereglers"
+              },
+              "type": "color",
+              "value": "#C6CAD2",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2000
+          },
+          "sw-review-star": {
+              "label": {
+                  "en-GB": "Review star",
+                  "de-DE": "Bewertungsstern"
+              },
+              "type": "color",
+              "value": "#F8C842",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2100
+          },
+          "sw-primary-hover-color": {
+              "label": {
+                  "en-GB": "Primary hover color",
+                  "de-DE": "Primäre Hover-Farbe"
+              },
+              "type": "color",
+              "value": "#E83B27",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2200
+          },
+          "sw-dark100-color": {
+              "label": {
+                  "en-GB": "Dark100 color",
+                  "de-DE": "Farbe Dark100"
+              },
+              "type": "color",
+              "value": "#1B2230",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2300
+          },
+          "sw-dark200-color": {
+              "label": {
+                  "en-GB": "Dark200 color",
+                  "de-DE": "Farbe Dark200"
+              },
+              "type": "color",
+              "value": "#333945",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2400
+          },
+          "sw-grey100-color": {
+              "label": {
+                  "en-GB": "Dark300 color",
+                  "de-DE": "Farbe Dark300"
+              },
+              "type": "color",
+              "value": "#ABAEB3",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2500
+          },
+          "sw-grey200-color": {
+              "label": {
+                  "en-GB": "Dark300 color",
+                  "de-DE": "Farbe Dark300"
+              },
+              "type": "color",
+              "value": "#6F737C",
+              "editable": true,
+              "block": "mcdartthemeColorsBlock",
+              "order": 2600
+          },
+          "sw-color-success": {
+              "label": {
+                  "en-GB": "Success color",
+                  "de-DE": "Erfolgsfarbe"
+              },
+              "type": "color",
+              "value": "#02c280",
+              "editable": true,
+              "block": "statusColors",
+              "order": 100
+          },
+          "sw-color-danger": {
+              "label": {
+                  "en-GB": "Error color",
+                  "de-DE": "Fehlerfarbe"
+              },
+              "type": "color",
+              "value": "#FF8C99",
+              "editable": true,
+              "block": "statusColors",
+              "order": 200
+          },
+          "sw-color-info": {
+              "label": {
+                  "en-GB": "Information color",
+                  "de-DE": "Informationsfarbe"
+              },
+              "type": "color",
+              "value": "#76bce7",
+              "editable": true,
+              "block": "statusColors",
+              "order": 300
+          },
+          "sw-color-warning": {
+              "label": {
+                  "en-GB": "Notice color",
+                  "de-DE": "Farbe beachten"
+              },
+              "type": "color",
+              "value": "#f09f00",
+              "editable": true,
+              "block": "statusColors",
+              "order": 400
+          },
+          "sw-font-family-base": {
+              "label": {
+                  "en-GB": "Fonttype Text",
+                  "de-DE": "Schriftart Text"
+              },
+              "type": "fontFamily",
+              "value": "'OpenSans', sans-serif",
+              "editable": true,
+              "block": "typography",
+              "order": 100
+          },
+          "sw-font-family-italic": {
+              "label": {
+                  "en-GB": "Fonttype Text",
+                  "de-DE": "Schriftart Text"
+              },
+              "type": "fontFamily",
+              "value": "'OpenSans-Italic', sans-serif",
+              "editable": true,
+              "block": "typography",
+              "order": 200
+          },
+          "sw-font-family-headline": {
+              "label": {
+                  "en-GB": "Fonttype Headline",
+                  "de-DE": "Schriftart Überschrift"
+              },
+              "type": "fontFamily",
+              "value": "'OpenSans', sans-serif",
+              "editable": true,
+              "block": "typography",
+              "order": 300
+          },
+          "sw-logo-default": {
+              "label": {
+                  "en-GB": "Default Logo",
+                  "de-DE": "Standard-Logo"
+              },
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart-logo.svg",
+              "editable": true,
+              "block": "media",
+              "order": 100
+          },
+          "sw-logo-darkmode": {
+              "label": {
+                  "en-GB": "Darkmode Logo",
+                  "de-DE": "Darkmode-Logo"
+              },
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart-logo-darkmode.svg",
+              "editable": true,
+              "block": "media",
+              "order": 200
+          },
+          "sw-logo-favicon": {
+              "label": {
+                  "en-GB": "Favicon",
+                  "de-DE": "Favicon"
+              },
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart_favicon.ico",
+              "editable": true,
+              "block": "media",
+              "order": 300
+          },
+          "sw-logo-share": {
+              "label": {
+                  "en-GB": "App & share icon",
+                  "de-DE": "App- & Share-Icon"
+              },
+              "type": "media",
+              "value": "",
+              "editable": true,
+              "block": "media",
+              "order": 400
+          },
+          "sw-logo-desktop": {
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart-logo.svg",
+              "editable": false,
+              "block": "media",
+              "order": 500
+          },
+          "sw-logo-tablet": {
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart-logo.svg",
+              "editable": false,
+              "block": "media",
+              "order": 600
+          },
+          "sw-logo-mobile": {
+              "type": "media",
+              "value": "app/storefront/dist/assets/logo/mcdart-logo.svg",
+              "editable": false,
+              "block": "media",
+              "order": 700
+          },
+          "nfx-desktop-lg": {
+              "label": {
+                  "en-GB": "Wide Desktop Screens (Above 1620 - Large Screens)",
+                  "de-DE": "Breite Desktop-Bildschirme (über 1620 - große Bildschirme)"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 1920",
+                  "de-DE": "Standardwert: 1920"
+              },
+              "type": "text",
+              "value": "1919",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 100
+          },
+          "nfx-desktop-md": {
+              "label": {
+                  "en-GB": "Medium Desktop Screens (Like 1480 - Macbook & Macbook Pro)",
+                  "de-DE": "Mittlere Desktop-Bildschirme (wie 1480 - Macbook & Macbook Pro)"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 1679",
+                  "de-DE": "Standardwert: 1679"
+              },
+              "type": "text",
+              "value": "1679",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 200
+          },
+          "nfx-desktop-sm": {
+              "label": {
+                  "en-GB": "Small Desktop Screens | sm",
+                  "de-DE": "Kleine Desktop-Bildschirme | sm"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 1420",
+                  "de-DE": "Standardwert: 1420"
+              },
+              "type": "text",
+              "value": "1420",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 300
+          },
+          "nfx-desktop-xs": {
+              "label": {
+                  "en-GB": "Small Desktop Screens | xs",
+                  "de-DE": "Kleine Desktop-Bildschirme | xs"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 1360",
+                  "de-DE": "Standardwert: 1360"
+              },
+              "type": "text",
+              "value": "1360",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 400
+          },
+          "nfx-tablet-lg": {
+              "label": {
+                  "en-GB": "Landscape Tablet",
+                  "de-DE": "Landschaftstafel"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 1250",
+                  "de-DE": "Standardwert: 1250"
+              },
+              "type": "text",
+              "value": "1250",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 500
+          },
+          "nfx-tablet-md": {
+              "label": {
+                  "en-GB": "Portrait Medium Tablet",
+                  "de-DE": "Mittleres Hochformat-Tablet"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 991",
+                  "de-DE": "Standardwert: 991"
+              },
+              "type": "text",
+              "value": "991",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 600
+          },
+          "nfx-tablet-sm": {
+              "label": {
+                  "en-GB": "Portrait Tablet",
+                  "de-DE": "Hochformat-Tablet"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 865",
+                  "de-DE": "Standardwert: 865"
+              },
+              "type": "text",
+              "value": "865",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 700
+          },
+          "nfx-mobile-lg": {
+              "label": {
+                  "en-GB": "Mobile Landscape",
+                  "de-DE": "Mobile Landschaft"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 767",
+                  "de-DE": "Standardwert: 767"
+              },
+              "type": "text",
+              "value": "767",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 800
+          },
+          "nfx-mobile-md": {
+              "label": {
+                  "en-GB": "Mobile Medium Portrait",
+                  "de-DE": "Mobiles mittleres Porträt"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 576",
+                  "de-DE": "Standardwert: 576"
+              },
+              "type": "text",
+              "value": "576",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 900
+          },
+          "nfx-mobile-sm": {
+              "label": {
+                  "en-GB": "Mobile Portrait",
+                  "de-DE": "Mobiles Porträt"
+              },
+              "helpText": {
+                  "en-GB": "Default value: 540",
+                  "de-DE": "Standardwert: 540"
+              },
+              "type": "text",
+              "value": "540",
+              "editable": true,
+              "block": "mcdartBreakpointsBlock",
+              "order": 1000
+          }
+      }
+  }
+}
