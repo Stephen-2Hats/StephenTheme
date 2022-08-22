@@ -1,0 +1,44 @@
+.nav-main{
+    border-top: 1px solid $color3;
+    border-bottom: 1px solid $color3;
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-link {
+            padding: rem(11) rem(18);
+            text-transform: uppercase;
+            color: $color2;
+            font-size: rem(14);
+            line-height: rem(24);
+            position: relative;
+
+            &:after{
+                content: '';
+                width: 100%;
+                height: rem(4);
+                background-color: $color4;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .main-navigation-link-text{
+                padding: 0;
+                margin: 0;
+                border: 0;
+            }
+
+            &:hover{
+                &:after{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
