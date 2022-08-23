@@ -29,6 +29,19 @@
     right: 25px !important;
  }
 
+ .product-slider{
+    .base-slider-controls-prev, .base-slider-controls-next{
+        border: 1px solid $color3;
+        &:hover{
+            border: 1px solid $color3;
+        }
+    
+        span{
+            color: $color3;
+        }
+    }
+ }
+
 //  Dots
 .base-slider {
     .tns-nav{

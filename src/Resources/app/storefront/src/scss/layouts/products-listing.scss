@@ -1,0 +1,30 @@
+.product-variant-characteristics{
+    display: none;
+}
+
+
+.product-price-info{
+    .product-price-unit{
+        display: none;
+    }
+
+    .product-price-wrapper{
+        .product-cheapest-price{
+            display: none;
+        }
+    }
+}
+
+.product-action{
+    display: none;
+}
+
+
+.product-slider-container {
+    .product-slider-item {
+        .product-box {
+            background-color: transparent;
+            border: 0;
+        }
+    }
+}
