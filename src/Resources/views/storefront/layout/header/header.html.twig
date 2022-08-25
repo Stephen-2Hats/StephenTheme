@@ -1,0 +1,37 @@
+
+{% sw_extends '@Strorefront/storefront/layout/header/header.html.twig' %}
+{% block layout_header %}
+    {% block layout_top_bar %}
+        {% sw_include '@Storefront/storefront/layout/header/top-bar.html.twig' %}
+    {% endblock %}
+
+    {% block layout_header_navigation %}
+    <div class="container">
+    
+    <div class="row align-items-center header-row">
+            {% block layout_header_phone %}
+                <div class="col-md-4">
+                   phone
+                </div>
+            {% endblock %}
+
+            {% block layout_header_logo %}
+                <div class="col-md-4 header-logo-col">
+                    {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+                </div>
+            {% endblock %}
+
+            {% block layout_header_actions %}
+                <div class="col-md-4 header-actions-col text-right">
+                    
+                       icons
+                    
+                </div>
+            {% endblock %}
+        </div>
+    </div>
+
+
+        
+    {% endblock %}
+{% endblock %}

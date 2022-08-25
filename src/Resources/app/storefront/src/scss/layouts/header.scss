@@ -1,5 +1,12 @@
-.top-bar-nav{
-    display: none;
+.notice-bar{
+    padding: 10px 0;
+    background: $color5;
+    text-align: center;
+
+    p{
+        color: $white-color;
+        text-transform: capitalize;
+    }
 }
 
 .header-row{
