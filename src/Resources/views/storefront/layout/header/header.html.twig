@@ -10,8 +10,8 @@
     
     <div class="row align-items-center header-row">
             {% block layout_header_phone %}
-                <div class="col-md-4">
-                   phone
+                <div class="col-md-4 d-none d-md-inline">
+                   <a href="tel:227505000" class="header-phone"><i class="fa fa-phone" aria-hidden="true"></i> INFOLINIA 22 750 50 00</a>
                 </div>
             {% endblock %}
 
@@ -21,11 +21,46 @@
                 </div>
             {% endblock %}
 
-            {% block layout_header_actions %}
-                <div class="col-md-4 header-actions-col text-right">
-                    
-                       icons
-                    
+           {% block layout_header_actions %}
+                <div class="col-md-4 header-actions-col">
+                    <div class="row {{ gridNoGuttersClass }} justify-content-end align-items-center">
+                        {% block layout_header_navigation_toggle %}
+                            <div class="col d-sm-none">
+                                <div class="menu-button">
+                                    {% block layout_header_navigation_toggle_button %}
+                                        <button class="btn nav-main-toggle-btn header-actions-btn"
+                                                type="button"
+                                                data-offcanvas-menu="true"
+                                                aria-label="{{ "general.menuLink"|trans|striptags }}">
+                                            {% block layout_header_navigation_toggle_button_icon %}
+                                                {% sw_icon 'stack' %}
+                                            {% endblock %}
+                                        </button>
+                                    {% endblock %}
+                                </div>
+                            </div>
+                        {% endblock %}
+                          {% block layout_header_actions_search %}
+                            <div class="col-auto ">
+                                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        {% endblock %}
+                         {% block layout_header_actions_account %}
+                            <div class="col-auto ml-4">
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            </div>
+                        {% endblock %}
+                         {% block layout_header_actions_favorite %}
+                            <div class="col-auto ml-4">
+                                <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                            </div>
+                        {% endblock %}
+                        {% block layout_header_actions_cart %}
+                            <div class="col-auto ml-4">
+                                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            </div>
+                        {% endblock %}
+                    </div>
                 </div>
             {% endblock %}
         </div>

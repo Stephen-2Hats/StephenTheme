@@ -1,11 +1,43 @@
 .notice-bar{
-    padding: 10px 0;
+    padding: rem(10) rem(60);
     background: $color5;
     text-align: center;
+    position: relative;
 
     p{
         color: $white-color;
         text-transform: capitalize;
+    }
+
+    a{
+        position: absolute;
+        right: rem(60);
+        top:50%;
+        transform: translateY(-50%);
+        color: $white-color;
+    }
+}
+
+.header-phone{
+    font-size: rem(16);
+    line-height: rem(18);
+    color: $black-color;
+    text-transform: uppercase;
+
+    &:hover{
+        color: $color5;
+        text-decoration: none;
+    }
+}
+
+.header-actions-col{
+    a{
+        font-size: rem(18);
+        color: $black-color;
+
+        &:hover{
+            color: $color5;
+        }
     }
 }
 

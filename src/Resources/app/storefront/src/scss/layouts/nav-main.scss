@@ -42,3 +42,15 @@
     }
 }
 
+.navigation-flyout{
+    background: $color4;
+
+    .navigation-flyout-link{
+        color: $white-color;
+
+        &:hover{
+            color: $color5;
+        }
+    }
+}
+

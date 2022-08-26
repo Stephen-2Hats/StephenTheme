@@ -20,6 +20,9 @@ $mobile-sm: rem($nfx-mobile-sm); // 540 Mobile Portrait
 $fonttype-text: $sw-font-family-base; // 'OpenSans', sans-serif
 $fonttype-text-italic: $sw-font-family-italic; // 'OpenSans-Italic', sans-serif
 $fonttype-headline: $sw-font-family-headline; // 'OpenSans', sans-serif
+$normal-font: 'Montserrat', sans-serif;
+$title-font: 'Playfair Display', serif;
+
 
 /*
 * Paths
@@ -65,7 +68,6 @@ $product-border-color: $sw-product-border-color; // #DBDDEA
 $product-image-background-color: $sw-product-image-background-color; // #F3F4F8
 $slider-arrow-color: $sw-slider-arrow-color; // #C6CAD2
 $review-star: $sw-review-star; // #F8C842
-
 $primary-hover-color:$sw-primary-hover-color; // #E83B27
 
 //Darkmode

@@ -1,30 +1,39 @@
-.product-variant-characteristics{
-    display: none;
-}
-
-
-.product-price-info{
-    .product-price-unit{
-        display: none;
-    }
-
-    .product-price-wrapper{
-        .product-cheapest-price{
-            display: none;
-        }
-    }
-}
-
-.product-action{
-    display: none;
-}
-
 
 .product-slider-container {
     .product-slider-item {
         .product-box {
             background-color: transparent;
             border: 0;
-        }
+
+            .product-image-wrapper{
+                height: 300px;
+
+                img{
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .product-info {
+
+                a{
+                    font-weight: 400;
+                    font-size: rem(16);
+                    line-height: rem(18);
+                    color: $black-color;
+                }
+
+                .product-price-wrapper{
+                    font-size: 0;
+
+                    .product-price{
+                        font-family:$title-font;
+                        font-size: rem(22);
+                        line-height: rem(24);
+                        color: $black-color;
+                    }
+                }
+            }
+        }       
     }
 }

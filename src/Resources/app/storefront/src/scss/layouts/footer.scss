@@ -1,12 +1,28 @@
 .footer-main{
+   padding: 0;
+   background: $color1;
+   border-top:0;
+
+   .footer-bottom{
     background: $color1;
-    padding: rem(40) 0 rem(55);
+    border-top: 1px solid $color3;
+   }
+}
 
-    .footer-bottom{
-        display: none;
-    }
+.footer-social-nav{
+    ul{
+        li{
+            display: inline-block;
+            margin: 0 rem(20);
 
-    .footer-logos{
-        display: none;
+            a{
+                font-size: rem(30);
+                color: $color4;
+
+                &:hover{
+                    color: $color5;
+                }
+            }
+        }
     }
 }
