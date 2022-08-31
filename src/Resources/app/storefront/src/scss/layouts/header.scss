@@ -4,6 +4,10 @@
     text-align: center;
     position: relative;
 
+    @include mobile-lg() {
+        display: none;
+    }
+
     p{
         color: $white-color;
         text-transform: capitalize;

@@ -6,7 +6,7 @@
                  class="row footer-columns"
                  data-collapse-footer="true"
                  role="list">
-                {% block layout_footer_navigation_hotline %}
+                {# {% block layout_footer_navigation_hotline %}
                     <div class="col-md-4 footer-column js-footer-column">
                         {% block layout_footer_navigation_hotline_headline %}
                             <div class="footer-column-headline footer-headline js-footer-column-headline js-collapse-footer-column-trigger"
@@ -45,7 +45,7 @@
                             </div>
                         {% endblock %}
                     </div>
-                {% endblock %}
+                {% endblock %} #}
                 {% block layout_footer_navigation_columns %}
                     {% for root in page.footer.navigation.tree %}
                         {% block layout_footer_navigation_column %}
@@ -219,14 +219,18 @@
                 <div class="container">
                  <div class="row align-items-center">
                  <div class="col-md-6 text-left">
-                 <p class="mb-0">Copyright &copy; 2022 Bemondi Created by <a href="#">Strix</a></p>
+                 <p class="mb-3 mb-md-0 copyright-text">Copyright &copy; 2022 Bemondi Created by <a href="#">Strix</a></p>
+
+<p>{{ context.salesChannel.customFields.footer_text_test }}</p>
+                 
+                 
                 </div>
-                 <div class="col-md-6 text-right">
+                 <div class="col-md-6 text-center text-md-right">
                     <select name="language" id="language">
-                        <option value="language">Poland</option>
-                        <option value="language">Poland</option>
-                        <option value="language">Poland</option>
-                        <option value="language">Poland</option>
+                        <option value="poland">Poland</option>
+                        <option value="dutech">Dutech</option>
+                        <option value="slovakia">Slovakia</option>
+                        <option value="czech">Czech</option>
                     </select>
                 </div>
                 </div>

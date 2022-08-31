@@ -46,6 +46,7 @@ h2{
     @include mobile-lg {
         font-size: rem(28);
         line-height: rem(32);
+        padding: 0;
     }
 }
 
