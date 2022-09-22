@@ -1,0 +1,13 @@
+.cms-image-container.aa{
+    position: relative;
+}
+
+.testdiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: pink;
+    padding: 40px;
+}
